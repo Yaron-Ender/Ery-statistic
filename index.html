@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+<style>
+:root{
+  /* Spacing */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+}
+*,
+*::before,
+*::after {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body{
+border:5px solid;
+}
+table {
+border-collapse: collapse;
+width: 50%;
+margin-bottom: 20px;
+}
+th, td {
+border: 1px solid #aaa;
+padding: 8px;
+text-align: center;
+}
+th {
+background-color: #f2f2f2;
+}
+.container {
+border: 3px solid rebeccapurple;
+width: 100%;
+max-width: 1200px;
+margin: 0 auto;
+padding:var(--spacing-xl)  var(--spacing-md);
+}
+.flx-row-gap{
+display: flex;
+justify-content: center;
+align-items:center;
+gap:20px;
+}
+.flx-row-start{
+display: flex;
+justify-content:flx;
+align-items:center;
+gap:20px;
+}
+    </style>
+</head>
+<body>
+<main class="container">
+<h1>text dxsfsdf</h1>
+<article class="intoduction">
+  <h2>inroduction:</h2>
+</article>
+<section class="bulk">
+  <h3>assay test - 1.95 - 2.30</h3>
+  <article class="cpk">
+  <h2>Cpk</h2>
+    <table>
+    <thead>
+    <tr>
+    <th>ts</th>
+    <th>1</th>
+    <th>2</th>
+    <th>3</th>
+    <th>4</th>
+    <th>5</th>
+    <th>6</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <th>Cpk</th>
+    <td>1.11</td>
+    <td>1.23</td>
+    <td>1.11</td>
+    <td>1.52</td>
+    <td>1.24</td>
+    <td>1.78</td>
+    </tr>
+    <tr>
+    <th>stDev</th>
+    <td>0.048</td>
+    <td>0.063</td>
+    <td>0.055</td>
+    <td>0.043</td>
+    <td>0.044</td>
+    <td>0.03</td>
+    </tr>
+    </tbody>
+    </table>
+    <h2>Cpk Formula</h2>
+    <p>
+    The Cpk is calculated as:
+    \[
+    Cpk = \min \left( \frac{USL - \mu}{3\sigma},\; \frac{\mu - LSL}{3\sigma} \right)
+    \]
+    </p>
+  </article>
+  <article class="CL">
+    <div class="flx-row-start">
+      <h2>2.Confidence interval</h2>
+      <p>
+        \[
+        \bar{x} \pm t_{\frac{\alpha}{2}} \times \frac{S}{\sqrt{n}}
+        \]
+      </p>
+    </div>
+    <div class="flx-row-gap" style=''>
+      <img src="./img/CL-Bulk.jpg" alt="">
+      <div>
+    <p>All six test samples (ts-1 through ts-6) show 99% Confidence Intervals (CI) for the mean that lie comfortably within the <b>1.95 – 2.30 </b> specification range.</p>
+    </div>
+    </div>
+  </article>
+</section>
+</main>
+</body>
+</html>
