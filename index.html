@@ -14,8 +14,9 @@
 <main class="container">
 <h1>Statistic Analysis For Erythromycin Assay Test</h1>
 <article class="introduction">
+  <h4><em>Written By : Yaron Ender, QC Laboratory</em></h4>
   <h2>inroduction:</h2>
-  <p>During Erythromycin manufacuring process the substance has been divided into 6 storage container (Bulk batch) that represent different place in the origin container.Assay determination test has been performed to every batch (<em><B>Monograph QC.W.B.30301001, Assay Spesification 1.95 - 2.30</B> </em>).<br>this report examine the posability of reducing assay test based on repeatibilty and variance analysis by using inferential statistic <br>  <span><em>All the culcolations has been made by minitab software</em></span></p>
+  <p>During the erythromycin manufacturing process, the substance is divided into six storage containers (bulk batches) originating from different locations. An assay determination test was performed on each batch according to Monograph QC.W.B.30301001, with an assay specification of 1.95–2.30. This report examines the possibility of reducing the number of assay tests by evaluating repeatability and variance using inferential statistics<br>  <span><em> All calculations were performed using Minitab software.</em></span></p>
 </article>
 <section class="bulk">
   <h2>Bulk analysis</h2>
@@ -28,6 +29,7 @@
         \]
         </p>
     </div>
+    <p>The following table summarizes the Cpk values and standard deviations for each test sample:</p>
     <div class="img-box">
       <table>
       <thead>
@@ -63,7 +65,7 @@
       </tbody>
       </table>
     </div>
-    <p>As the table indicates, the Cpk values for all test samples are well above the industry-accepted threshold of 1.0, demonstrating that our process is capable and producing results within acceptable limits.samples 4 and 6 have Cpk values above the benchmark of 1.33, demonstrating exceptional process capability.</p>
+    <p>AAs the table indicates, all test samples have Cpk values well above the industry-accepted threshold of 1.0, demonstrating that our process is capable of producing results within acceptable limits. Notably, test samples 4 and 6 exceed the benchmark of 1.33, indicating exceptional process capability.</p>
   </article>
   <article class="CL">
     <div class="flx-row-start">
@@ -79,32 +81,32 @@
         <img src="./img/CL-Bulk.png" alt="CL-Bulk">
         <img src="./img/CL bulb plot.png" alt="CL-Bulk-plot">
       </div>
-      <p>All six test samples (ts-1 through ts-6) show 99% Confidence Intervals (CI) for the mean that lie comfortably within the Assay specification range <b>1.95 – 2.30 </b> .</p>
+      <p>All six test samples (ts1 through ts6) have 99% confidence intervals for the mean that lie comfortably within the assay specification range of <b>1.95 – 2.30 </b> .</p>
       <div>
     </div>
     </div>
   </article>
   <article class="bk-anova">
 <h3>3. ANOVA one-way test</h3>
-<p>ANOVA one-way tests were performed at a 99% confidence level on all six mean replicates to examine if there is a relationship between them. The null hypothesis stated that there is no difference between the means of the replicates. The alternative hypothesis proposed that there is a significant difference between the replicates</p>
+<p>A one-way ANOVA was conducted at a 99% confidence level on the six mean replicates to determine whether there were significant differences among them. The hypotheses were defined as follows:</p>
 <div class="anova-result flx-col img-box">
   <table>
     <thead>
       <tr>
-        <th>Null hypothesis</th>
-        <th>Alternative hypothesis</th>
+        <th>Null Hypothesis: </th>
+        <th>Alternative Hypothesis: </th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td>There is no difference between the 6 categories of the independent variable <b>ts</b> with respect to the dependent variable Assay measurement.</td>
-        <td>There is a difference between the 6 categories of the independent variable <b>ts</b> with respect to the dependent variable Assay measurement.</td>
+        <td>There is no difference between the six test samples with respect to assay measurement.</td>
+        <td>There is a difference between the six test samples with respect to assay measurement.</td>
       </tr>
     </tbody>
   </table>
   <img src="./img/bulk ANOVA.png" alt="bulk-ANOVA">
 </div>
-<p>A one-way analysis of variance (ANOVA) indicated that there was no significant difference among the “ts” categories. (𝑝 > 0.01).Therefore, based on the available data, we fail to reject the null hypothesis, which means there is no statistically significant difference among the “ts” categories.</p>
+<p>The ANOVA results indicated no statistically significant difference among the test samples<br> (p > 0.01). Therefore, we fail to reject the null hypothesis.</p>
   </article>
   <article class="RSD-bulk">
     <div class="flx-row-start">
@@ -115,13 +117,84 @@
         \]
         </p>
     </div>
+    <p>A homogeneity analysis was performed within each batch. </p>
     <div class="anova-result">
       <img src="./img/bulk RSD.png" alt="bulk RSD">
     </div>
-    <p>homogeneity analysis was performed within each batch</p>
-<p>the results shows that all the bulk batches have RSD 	&#60 5% whereas 85% of them have RSD &#8804 1% This very low RSD indicates excellent homogeneity within the batches.</p>
+    <p>The results show that all bulk batches have an RSD of less than 5%, with 85% of them having an RSD ≤ 1%. This very low RSD indicates excellent homogeneity within the batches.
+    </p>
+
+  </article>
+  <article class="conclusion">
+  <h3>Conclusion</h3>
+ <p>The statistical analysis clearly demonstrates that the erythromycin assay process is both robust and consistent. All test samples yielded Cpk values well above the minimum requirement—with several samples even surpassing more stringent benchmarks—indicating a highly capable process. The 99% confidence intervals for assay measurements consistently fell within the specified range, and the one-way ANOVA confirmed that no significant differences exist among the replicates. Furthermore, the extremely low coefficient of variation (RSD) underscores the excellent homogeneity of the bulk batches.<br>
+<b>Therefore, the analysis supports reducing assay testing in the bulk batches.</b></p>
   </article>
 </section>
+<!-- <section class="product">
+<article class="t-test-mid-FP">
+  <h3>t-test for middle stage</h3>
+  <div class="row">
+    <table>
+      <tbody>
+        <tr>
+          <th>Product Batch</th>
+          <td>1.0389</td>
+          <td>1.0389</td>
+          <td>1.03614</td>
+          <td>1.03613</td>
+          <td>1.03617</td>
+          <td>1.03817</td>
+          <td>1.0388</td>
+          <td>1.0387</td>
+          <td>1.0386</td>
+          <td>1.0386</td>
+          <td>1.0384</td>
+          <td>1.0384</td>
+          <td>1.7267</td>
+          <td>1.7265</td>
+          <td>1.7265</td>
+        </tr>
+        <tr>
+          <th>T-value</th>
+          <td>-0.01</td>
+          <td>-0.37</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <th>P-alue</th>
+          <td>0.995</td>
+          <td>0.718</td>
+          <td>1</td>
+          <td>0.998</td>
+          <td>1</td>
+          <td>1</td>
+          <td>0.998</td>
+          <td>0.999</td>
+          <td>0.999</td>
+          <td>0.999</td>
+          <td>0.999</td>
+          <td>0.999</td>
+          <td>1</td>
+          <td>0.999</td>
+          <td>1</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</article>
+</section> -->
 </main>
 </body>
 </html>

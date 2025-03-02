@@ -14,7 +14,7 @@
   --font-praimry: "Arial", sans-serif;
   --font-secondary: "Georgia", serif;
   --font-third:"Poppins" ,serif;
-  --base-font-size: 16px;
+  --base-font-size:20px;
   --line-height: 1.5;
 
   /* Spacing */
@@ -51,6 +51,7 @@ body {
   line-height: var(--line-height);
   color: var(--dark-color);
   background-color: var(--light-color);
+  min-height:100vh;
 }
 
 /* Typography */
@@ -145,6 +146,10 @@ thead th:first-child.ts {
   width:max-content;
  box-shadow:0px 0px 5px 1px rgba(0,0,0,0.3);
  margin-bottom: var(--spacing-sm);
+}
+/* introduction*/
+.introduction h4{
+  font-weight:200;
 }
 /* bulk */
 .img-CL{
