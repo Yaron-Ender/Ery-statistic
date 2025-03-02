@@ -190,7 +190,7 @@ justify-content:space-between;
   justify-content:center;
   }
   .furmula{
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     margin-bottom: 0;
   }
   article:not(.introduction):nth-child(even){
