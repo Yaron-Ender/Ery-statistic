@@ -4,7 +4,7 @@
 :root {
   /* Color Variables */
   --primary-color: #007bff;
-  --secondary-color: #6c757d;
+  --secondary-color: #e1e1e150;
   --success-color: #28a745;
   --danger-color: #dc3545;
   --light-color: #f8f9fa;
@@ -71,7 +71,9 @@ p,span{
   font-weight:400;
   line-height:1.8;
 }
-
+article{
+padding:var(--spacing-md) ;
+}
 /* Links */
 a {
   color: var(--primary-color);
@@ -185,4 +187,7 @@ justify-content:space-between;
   .furmula{
     font-size: 0.6rem;
     margin-bottom: 0;
+  }
+  article:not(.introduction):nth-child(even){
+    background-color:var(  --secondary-color);
   }
