@@ -9,125 +9,118 @@
     </script>
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
-<style>
-:root{
-  /* Spacing */
-  --spacing-xs: 0.25rem;
-  --spacing-sm: 0.5rem;
-  --spacing-md: 1rem;
-  --spacing-lg: 2rem;
-  --spacing-xl: 3rem;
-}
-*,
-*::before,
-*::after {
-box-sizing: border-box;
-margin: 0;
-padding: 0;
-}
-body{
-border:5px solid;
-}
-table {
-border-collapse: collapse;
-width: 50%;
-margin-bottom: 20px;
-}
-th, td {
-border: 1px solid #aaa;
-padding: 8px;
-text-align: center;
-}
-th {
-background-color: #f2f2f2;
-}
-.container {
-border: 3px solid rebeccapurple;
-width: 100%;
-max-width: 1200px;
-margin: 0 auto;
-padding:var(--spacing-xl)  var(--spacing-md);
-}
-.flx-row-gap{
-display: flex;
-justify-content: center;
-align-items:center;
-gap:20px;
-}
-.flx-row-start{
-display: flex;
-justify-content:flx;
-align-items:center;
-gap:20px;
-}
-    </style>
 </head>
 <body>
 <main class="container">
 <h1>text dxsfsdf</h1>
 <article class="intoduction">
   <h2>inroduction:</h2>
+  <p>During Erythromycin manufacuring process the substance has been divided into 6 storage container (Bulk batch) that represent different place in the origin container.Assay determination test has been performed to every batch (<em><B>spesification 1.95 - 2.30</B> </em>).this report examine the posability of reducing assay test based on repeatibilty and variance analysis by using inferential statistic</p>
+  <span>All the culcolations has been made by minitab software</span>
 </article>
 <section class="bulk">
-  <h3>assay test - 1.95 - 2.30</h3>
+  <h2>Bulk analysis</h2>
   <article class="cpk">
-  <h2>Cpk</h2>
-    <table>
-    <thead>
-    <tr>
-    <th>ts</th>
-    <th>1</th>
-    <th>2</th>
-    <th>3</th>
-    <th>4</th>
-    <th>5</th>
-    <th>6</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-    <th>Cpk</th>
-    <td>1.11</td>
-    <td>1.23</td>
-    <td>1.11</td>
-    <td>1.52</td>
-    <td>1.24</td>
-    <td>1.78</td>
-    </tr>
-    <tr>
-    <th>stDev</th>
-    <td>0.048</td>
-    <td>0.063</td>
-    <td>0.055</td>
-    <td>0.043</td>
-    <td>0.044</td>
-    <td>0.03</td>
-    </tr>
-    </tbody>
-    </table>
-    <h2>Cpk Formula</h2>
-    <p>
-    The Cpk is calculated as:
-    \[
-    Cpk = \min \left( \frac{USL - \mu}{3\sigma},\; \frac{\mu - LSL}{3\sigma} \right)
-    \]
-    </p>
+    <div class="flx-row-start">
+      <h3>1. Cpk</h3>
+      <p class="furmula">
+        \[
+        Cpk = \min \left( \frac{USL - \mu}{3\sigma},\; \frac{\mu - LSL}{3\sigma} \right)
+        \]
+        </p>
+    </div>
+    <div class="img-box">
+      <table>
+      <thead>
+      <tr>
+      <th class="ts">ts</th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+      <th>5</th>
+      <th>6</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+      <th>Cpk</th>
+      <td>1.11</td>
+      <td>1.23</td>
+      <td>1.11</td>
+      <td>1.52</td>
+      <td>1.24</td>
+      <td>1.78</td>
+      </tr>
+      <tr>
+      <th>stDev</th>
+      <td>0.048</td>
+      <td>0.063</td>
+      <td>0.055</td>
+      <td>0.043</td>
+      <td>0.044</td>
+      <td>0.03</td>
+      </tr>
+      </tbody>
+      </table>
+    </div>
+    <p>As the table indicates, the Cpk values for all test samples are well above the industry-accepted threshold of 1.0, demonstrating that our process is capable and producing results within acceptable limits.samples 4 and 6 have Cpk values above the benchmark of 1.33, demonstrating exceptional process capability.</p>
   </article>
   <article class="CL">
     <div class="flx-row-start">
       <h2>2.Confidence interval</h2>
-      <p>
+      <p class="furmula">
         \[
         \bar{x} \pm t_{\frac{\alpha}{2}} \times \frac{S}{\sqrt{n}}
         \]
       </p>
     </div>
-    <div class="flx-row-gap" style=''>
-      <img src="./img/CL-Bulk.jpg" alt="">
+    <div class="flx-col">
+      <div class="img-CL img-box">
+        <img src="./img/CL-Bulk.png" alt="CL-Bulk">
+        <img src="./img/CL bulb plot.png" alt="CL-Bulk-plot">
+      </div>
+      <p>All six test samples (ts-1 through ts-6) show 99% Confidence Intervals (CI) for the mean that lie comfortably within the Assay specification range <b>1.95 – 2.30 </b> .</p>
       <div>
-    <p>All six test samples (ts-1 through ts-6) show 99% Confidence Intervals (CI) for the mean that lie comfortably within the <b>1.95 – 2.30 </b> specification range.</p>
     </div>
     </div>
+  </article>
+  <article class="bk-anova">
+<h3>3. ANOVA one-way test</h3>
+<p>ANOVA one-way tests were performed at a 99% confidence level on all six mean replicates to examine if there is a relationship between them. The null hypothesis stated that there is no difference between the means of the replicates. The alternative hypothesis proposed that there is a significant difference between the replicates</p>
+<div class="anova-result flx-col img-box">
+  <table>
+    <thead>
+      <tr>
+        <th>Null hypothesis</th>
+        <th>Alternative hypothesis</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>There is no difference between the 6 categories of the independent variable <b>ts</b> with respect to the dependent variable Assay measurement.</td>
+        <td>There is a difference between the 6 categories of the independent variable <b>ts</b> with respect to the dependent variable Assay measurement.</td>
+      </tr>
+    </tbody>
+  </table>
+  <img src="./img/bulk ANOVA.png" alt="bulk-ANOVA">
+</div>
+<p>A one-way analysis of variance (ANOVA) indicated that there was no significant difference among the “ts” categories. (𝑝 > 0.01).Therefore, based on the available data, we fail to reject the null hypothesis, which means there is no statistically significant difference among the “ts” categories.</p>
+  </article>
+  <article class="RSD-bulk">
+    <div class="flx-row-start">
+      <h3>4. Coefficient of Variation (RSD)</h3>
+      <p class="furmula">
+        \[
+        CV = RSD =\frac{\sigma}{\mu}\times\;100\%
+        \]
+        </p>
+    </div>
+    <div class="anova-result">
+      <img src="./img/bulk RSD.png" alt="bulk RSD">
+    </div>
+    <p>homogeneity analysis was performed within each batch</p>
+<p>the results shows that all the bulk batches have RSD 	&#60 5% whereas 85% of them have RSD &#8804 1% This very low RSD indicates excellent homogeneity within the batches.</p>
   </article>
 </section>
 </main>
