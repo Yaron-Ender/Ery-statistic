@@ -189,6 +189,12 @@ justify-content:space-between;
   align-items:flex-start;
   justify-content:center;
   }
+  .mt{
+    margin-top:50px;
+  }
+  .mt-larg{
+    margin-top:120px;
+  }
   .furmula{
     font-size: 0.8rem;
     margin-bottom: 0;
