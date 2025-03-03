@@ -197,6 +197,10 @@ justify-content:space-between;
   .mt-larg{
     margin-top:550px;
   }
+  .mt-larg h3{
+    margin-top:50px;
+  }
+
   .furmula{
     font-size: 0.8rem;
     margin-bottom: 0;
